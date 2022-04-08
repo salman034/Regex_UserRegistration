@@ -4,8 +4,9 @@ import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
 public class UserRegistration {
-    public boolean lastName() {
-        boolean matchesString = Pattern.matches("^[A-Z]{1}[a-zA-Z]{3,10}$", "Pasha");
+    public boolean email() {
+        boolean matchesString = Pattern.matches("^[A-Za-z._]+[@]{1}[a-zA-Z]+[.a-z]{4}([.a-zA-Z]{3})*$",
+                                                   "mkspasha.xyz@gmail.com");
         return matchesString;
     }
 }
